@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in the toolkit is not working as expected.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Toolkit version
+      description: Find the version at the bottom-right of the welcome screen.
+      placeholder: 0.2.0-preview
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Windows version and display scale
+      placeholder: Windows 11, 1920×1080, 125%
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the tool, chart difficulty and approximate timestamp if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Additional context
+      description: Optional screenshots or errors. Avoid private information and copyrighted game media.

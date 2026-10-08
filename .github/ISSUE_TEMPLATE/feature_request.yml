@@ -1,0 +1,23 @@
+name: Feature suggestion
+description: Suggest a change that helps your level-making workflow.
+title: "[Suggestion] "
+labels: [enhancement]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Toolkit version
+      placeholder: 0.2.0-preview
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the workflow and where you get stuck.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested behavior
+    validations:
+      required: true
